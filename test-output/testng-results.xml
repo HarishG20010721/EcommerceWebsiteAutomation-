@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-27T17:49:02 IST" name="Login Suite" finished-at="2024-09-27T17:49:15 IST" duration-ms="13071">
+    <groups>
+      <group name="loginPositiveScenario">
+        <method signature="LoginFunctionalityTest.loginPositiveScenario()[pri:1, instance:com.swag.testcases.LoginFunctionalityTest@524f3b3a]" name="loginPositiveScenario" class="com.swag.testcases.LoginFunctionalityTest"/>
+      </group> <!-- loginPositiveScenario -->
+      <group name="functionalTest">
+        <method signature="LoginFunctionalityTest.loginPositiveScenario()[pri:1, instance:com.swag.testcases.LoginFunctionalityTest@524f3b3a]" name="loginPositiveScenario" class="com.swag.testcases.LoginFunctionalityTest"/>
+        <method signature="ApplyFilterFunctionalityTest.filterFunctionality()[pri:2, instance:com.swag.testcases.ApplyFilterFunctionalityTest@49ff7d8c]" name="filterFunctionality" class="com.swag.testcases.ApplyFilterFunctionalityTest"/>
+        <method signature="AddToCartFunctionalityTest.addToCartFunctionality()[pri:3, instance:com.swag.testcases.AddToCartFunctionalityTest@2ef14fe]" name="addToCartFunctionality" class="com.swag.testcases.AddToCartFunctionalityTest"/>
+        <method signature="CheckoutFunctionalityTest.checkOutFunctionality()[pri:4, instance:com.swag.testcases.CheckoutFunctionalityTest@7fb95505]" name="checkOutFunctionality" class="com.swag.testcases.CheckoutFunctionalityTest"/>
+        <method signature="LogoutFunctionalityTest.LogoutFunctionality()[pri:5, instance:com.swag.testcases.LogoutFunctionalityTest@7331196b]" name="LogoutFunctionality" class="com.swag.testcases.LogoutFunctionalityTest"/>
+      </group> <!-- functionalTest -->
+    </groups>
+    <test started-at="2024-09-27T17:49:02 IST" name="Login Functionality Test" finished-at="2024-09-27T17:49:15 IST" duration-ms="13071">
+      <class name="com.swag.testcases.LogoutFunctionalityTest">
+        <test-method signature="LogoutFunctionality()[pri:5, instance:com.swag.testcases.LogoutFunctionalityTest@7331196b]" started-at="2024-09-27T17:49:13 IST" name="LogoutFunctionality" description="Logout Functionality" finished-at="2024-09-27T17:49:13 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFunctionality -->
+      </class> <!-- com.swag.testcases.LogoutFunctionalityTest -->
+      <class name="com.swag.testcases.AddToCartFunctionalityTest">
+        <test-method signature="addToCartFunctionality()[pri:3, instance:com.swag.testcases.AddToCartFunctionalityTest@2ef14fe]" started-at="2024-09-27T17:49:12 IST" name="addToCartFunctionality" description="Add To Cart Functionality" finished-at="2024-09-27T17:49:13 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFunctionality -->
+      </class> <!-- com.swag.testcases.AddToCartFunctionalityTest -->
+      <class name="com.swag.testcases.CheckoutFunctionalityTest">
+        <test-method signature="checkOutFunctionality()[pri:4, instance:com.swag.testcases.CheckoutFunctionalityTest@7fb95505]" started-at="2024-09-27T17:49:13 IST" name="checkOutFunctionality" description="Check Out Functionality" finished-at="2024-09-27T17:49:13 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutFunctionality -->
+      </class> <!-- com.swag.testcases.CheckoutFunctionalityTest -->
+      <class name="com.swag.testcases.LoginFunctionalityTest">
+        <test-method signature="loginPositiveScenario()[pri:1, instance:com.swag.testcases.LoginFunctionalityTest@524f3b3a]" started-at="2024-09-27T17:49:09 IST" name="loginPositiveScenario" description="Swag Lab Positive Scenario" finished-at="2024-09-27T17:49:12 IST" duration-ms="2547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPositiveScenario -->
+      </class> <!-- com.swag.testcases.LoginFunctionalityTest -->
+      <class name="com.swag.basetest.CommonToAllTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.swag.basetest.CommonToAllTest@130e116b]" started-at="2024-09-27T17:49:03 IST" name="Setup" finished-at="2024-09-27T17:49:09 IST" duration-ms="6154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.swag.basetest.CommonToAllTest@130e116b]" started-at="2024-09-27T17:49:13 IST" name="TearDown" finished-at="2024-09-27T17:49:15 IST" duration-ms="2022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.swag.basetest.CommonToAllTest -->
+      <class name="com.swag.testcases.ApplyFilterFunctionalityTest">
+        <test-method signature="filterFunctionality()[pri:2, instance:com.swag.testcases.ApplyFilterFunctionalityTest@49ff7d8c]" started-at="2024-09-27T17:49:12 IST" name="filterFunctionality" description="Filter Functionality Test" finished-at="2024-09-27T17:49:12 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterFunctionality -->
+      </class> <!-- com.swag.testcases.ApplyFilterFunctionalityTest -->
+    </test> <!-- Login Functionality Test -->
+  </suite> <!-- Login Suite -->
+</testng-results>

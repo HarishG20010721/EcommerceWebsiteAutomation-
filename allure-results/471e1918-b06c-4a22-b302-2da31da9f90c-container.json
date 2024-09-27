@@ -1,0 +1,1 @@
+{"uuid":"471e1918-b06c-4a22-b302-2da31da9f90c","name":"Login Functionality Test","children":["a0584280-0562-4c8c-8fdb-11488d115a69"],"befores":[{"name":"Setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1727421446002,"stop":1727421450908}],"afters":[],"start":1727421445968,"stop":1727421453316}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login Suite">
+   
+  <listeners>
+  	<listener class-name="com.swag.resources.ExtentReportManager"/>
+  </listeners>
+  
+  <test thread-count="5" name="Login Functionality Test">
+  	<groups>
+  		<run>
+  			<include name="main"/>
+  			<include name="functionalTest"/>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="com.swag.basetest.CommonToAllTest"/>
+      <class name="com.swag.testcases.LoginFunctionalityTest"/>
+      <class name="com.swag.testcases.ApplyFilterFunctionalityTest"/>
+      <class name="com.swag.testcases.AddToCartFunctionalityTest"/>
+      <class name="com.swag.testcases.CheckoutFunctionalityTest"/>
+      <class name="com.swag.testcases.LogoutFunctionalityTest"/>
+    </classes>
+  </test> <!-- Login Functionality Test -->
+</suite> <!-- Login Suite -->
