@@ -9,6 +9,7 @@ import com.swag.basetest.CommonToAllTest;
 import com.swag.pom.CartPage;
 import com.swag.pom.CheckOutPage;
 import com.swag.pom.OverviewPage;
+import com.swag.resources.ScreenShot;
 
 public class CheckoutFunctionalityTest {
 	
@@ -33,6 +34,7 @@ public class CheckoutFunctionalityTest {
 		checkOutPage.enterFirstName(commonToAllTest.getProperties().getProperty("First_Name"));
 		checkOutPage.enterLastName(commonToAllTest.getProperties().getProperty("Last_Name"));
 		checkOutPage.enterPostalCode(commonToAllTest.getProperties().getProperty("Postal_Code"));
+		ScreenShot.getScreenShot("CheckOut");
 		checkOutPage.clickOnContinueButton();
 		
 		String expectedResult = overviewPage.getHeaderText();

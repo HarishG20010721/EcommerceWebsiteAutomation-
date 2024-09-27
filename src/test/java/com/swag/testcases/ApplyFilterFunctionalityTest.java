@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.swag.basetest.CommonToAllTest;
 import com.swag.pom.ProductListPage;
+import com.swag.resources.ScreenShot;
 
 public class ApplyFilterFunctionalityTest {
 	
@@ -24,17 +25,12 @@ public class ApplyFilterFunctionalityTest {
 	}
 	
 	@Test(priority = 2, description = "Filter Functionality Test", groups = {"functionalTest"})
-	public void filterFunctionality()
+	public void filterFunctionality() throws IOException
 	{
-		try {
-			productListPage.applyFilter(commonToAllTest.getProperties().getProperty("Filter_Options"));
-			boolean expectedResult = productListPage.validateProductPrice();
-			Assertions.assertThat(expectedResult).isTrue();
-		}
-		catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
+		productListPage.applyFilter(commonToAllTest.getProperties().getProperty("Filter_Options"));
+		boolean expectedResult = productListPage.validateProductPrice();
+		ScreenShot.getScreenShot("Filter");
+		Assertions.assertThat(expectedResult).isTrue();	
 		
 	}
 	

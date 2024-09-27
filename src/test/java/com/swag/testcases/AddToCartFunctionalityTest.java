@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.swag.basetest.CommonToAllTest;
 import com.swag.pom.CartPage;
 import com.swag.pom.ProductListPage;
+import com.swag.resources.ScreenShot;
 
 public class AddToCartFunctionalityTest {
 	
@@ -29,6 +30,7 @@ public class AddToCartFunctionalityTest {
 	{	
 		productListPage.addTocart(commonToAllTest.getProperties().getProperty("Product_Name"));
 		productListPage.clickOnCartLink();
+		ScreenShot.getScreenShot("AddToCart");
 		String expectedResult = cartPage.getCartHeaderText();
 		Assertions.assertThat(expectedResult).isNotNull().isNotBlank().contains(commonToAllTest.getProperties().getProperty("Cart_Header"));
 		

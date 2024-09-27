@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.swag.basetest.CommonToAllTest;
 import com.swag.pom.LoginPage;
 import com.swag.pom.MenuBar;
+import com.swag.resources.ScreenShot;
 
 public class LogoutFunctionalityTest{
 	
@@ -31,7 +32,7 @@ public class LogoutFunctionalityTest{
 	{
 		menuBar.clickOnMenuButton();
 		menuBar.clickOnLogoutButton();
-		
+		ScreenShot.getScreenShot("Logout");
 		String expectedResult = loginPage.getLoginText();
 		
 		Assertions.assertThat(expectedResult).isNotNull().isNotBlank().contains(commonToAllTest.getProperties().getProperty("Logout_Result"));

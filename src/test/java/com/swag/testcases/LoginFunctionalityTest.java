@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.swag.pom.LoginPage;
 import com.swag.pom.ProductListPage;
+import com.swag.resources.ScreenShot;
 
 
 public class LoginFunctionalityTest{
@@ -30,6 +31,7 @@ public class LoginFunctionalityTest{
 		loginPage.openUrl();
 		loginPage.enterUserName(properties.getProperty("Username"));
 		loginPage.enterpassword(properties.getProperty("Password"));
+		ScreenShot.getScreenShot("loginPositiveScenario");
 		loginPage.clickOnLoginButton();
 		
 		productListPage = loginPage.afterLogin();
@@ -46,6 +48,7 @@ public class LoginFunctionalityTest{
 		loginPage.enterUserName(properties.getProperty("Username"));
 		loginPage.enterpassword(properties.getProperty("Invalid_Password"));
 		loginPage.clickOnLoginButton();
+		ScreenShot.getScreenShot("loginNegativeScenario");
 		
 		String error = loginPage.getError();
 		

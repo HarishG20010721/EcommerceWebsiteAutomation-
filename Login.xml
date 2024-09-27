@@ -3,7 +3,7 @@
 <suite name="Login Suite">
   
   <listeners>
-  	<listener class-name="com.swag.resources.ExtentReportManaget"/>
+  	<listener class-name="com.swag.resources.ExtentReportManager"/>
   </listeners>
  
   <test thread-count="5" name="Login Functionality Test">
